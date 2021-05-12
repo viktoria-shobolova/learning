@@ -16,6 +16,86 @@
   }  */
 
 
+  body {
+    background-color: rgb(228, 245, 168);
+  } 
+
+  /* Пример позиционирования и спрайтов (начало) */
+.icons {
+	display: flex;
+	margin-bottom: 50px;
+}
+.icons a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.icons span {
+	box-sizing: border-box;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+  padding: 5px 10px;
+	
+	text-align: center;
+	color: white;
+	background-color: rgb(78, 75, 75);
+	border-right: 5px solid rgb(200, 202, 92);
+}
+.icons a:last-child span {
+	border-right: none;
+}
+.icons span:hover {
+	background-color: rgb(24, 23, 23);
+}
+.icons .icon {
+	width: 100px;
+	height: 100px;
+	background-image: url("../img/sprites.png");
+	background-repeat: no-repeat;
+}
+.icons .icon-fb {
+	background-position: 0 0;
+}
+.icons .icon-tw {
+	background-position: -100px 0;
+}
+.icons .icon-igm {
+	background-position: -200px 0;
+}
+
+.icons .icon-fb:hover {
+  background-position: 0 -100px;
+}
+
+.icons .icon-tw:hover {
+	background-position: -100px -100px;
+}
+.icons .icon-igm:hover {
+	background-position: -200px -100px;
+}
+
+@media(max-width: 992px) {
+	.icons {
+		flex-direction: column;
+	}
+	.icons a {
+		margin-bottom: 35px;
+	}
+	.icons span {
+		border-right: none;
+		border-bottom: 5px solid rgb(200, 202, 92);
+	}
+	.icons a:last-child span {
+		border-bottom: none;
+	}
+}
+/* Пример позиционирования и спрайтов (конец) */
+
+
+
   .card {
     margin: 50px auto;
     min-width: 300px;

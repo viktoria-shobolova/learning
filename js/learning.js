@@ -1,3 +1,15 @@
+// const time = new Date().getHours();
+// const dayTheme = document.getElementById("dayTheme");
+// const nightTheme = document.getElementById("nightTheme");
+
+// if(time <= 20 && time >= 6) {
+// 	dayTheme.remove();
+// }
+// else {
+// 	nightTheme.remove();
+// }
+
+
 
 //форма с переключателями
 const form = document.getElementById("generateCard");
@@ -167,7 +179,7 @@ class Card {
 let child = new ChildCard("child", "card-decorative", text, "https://picsum.photos/500/300");
 child.createCard();
 child.modifiedCard("card-circle");
-console.log(document.querySelector(".card img") instanceof HTMLImageElement);
+//console.log(document.querySelector(".card img") instanceof HTMLImageElement);
 
 
 for (let radio of radioButtons) {
