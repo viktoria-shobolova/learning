@@ -15,7 +15,6 @@
     border-radius: 10px;
   }  */
 
-
   body {
     background-color: rgb(228, 245, 168);
   } 
@@ -93,8 +92,6 @@
 	}
 }
 /* Пример позиционирования и спрайтов (конец) */
-
-
 
   .card {
     margin: 50px auto;
